@@ -49,7 +49,7 @@ Two models have been used for this task: **YOLOv5** and **YOLOv8**.
 
 ---
 
-## **TESTING RESULTS 1**
+## **VALIDATION RESULTS 1**
 
 | Metric             | YOLOv5 | YOLOv8 |
 |--------------------|--------|--------|
@@ -84,11 +84,14 @@ Two models have been used for this task: **YOLOv5** and **YOLOv8**.
 ```bash
 python train.py --img 640 --batch 8 --epochs 50 --data data.yaml --weights yolov5s.pt --name traffic_yolov5
 ```
+The trained weights will get saved as runs/train/traffic_yolov5/weights/best.pt
 
 **YOLOv8:**
 ```bash
 yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=10 batch=8 imgsz=640 name=traffic_yolov8
 ```
+
+The trained weights will get saved as runs/detect/traffic_yolov8/weights/best.pt
 
 ---
 
