@@ -39,43 +39,6 @@ Two models have been used for this task: **YOLOv5** and **YOLOv8**.
 
 ---
 
-## **TRAINING RESULTS**
-
-| Metric             | YOLOv5 | YOLOv8 |
-|--------------------|--------|--------|
-| **Precision (P)**  | 0.91   | 0.97   |
-| **Recall (R)**     | 0.962  | 0.872  |
-| **Accuracy (A)**   | 0.969  | 0.948  |
-
----
-
-## **TESTING RESULTS 1**
-
-| Metric             | YOLOv5 | YOLOv8 |
-|--------------------|--------|--------|
-| **Precision (P)**  | 0.92   | 0.967  |
-| **Recall (R)**     | 0.902  | 0.907  |
-| **Accuracy (A)**   | 0.92   | 0.975  |
-
----
-
-## **TESTING RESULTS 2**
-
-| Metric             | YOLOv5 | YOLOv8 |
-|--------------------|--------|--------|
-| **Precision (P)**  | 0.93   | 0.973  |
-| **Recall (R)**     | 0.914  | 0.913  |
-| **Accuracy (A)**   | 0.951  | 0.981  |
-
----
-
-## **DISTANCE EVALUATION**  
-- Both models successfully detected traffic lights at a distance greater than the **Stopping Sight Distance (SSD)** for speeds up to **35 km/h**.  
-- At higher speeds, the models were unable to detect traffic lights before reaching the SSD.  
-- Refer to `distance.ipynb` to calculate distance for the videos.
-
----
-
 ## **HOW TO USE**
 
 ### **Training the Model**
@@ -134,6 +97,43 @@ python detect.py --weights runs/train/traffic_yolov5/weights/best.pt --source pa
 ```bash
 yolo task=detect mode=predict model=runs/detect/traffic_yolov8/weights/best.pt source=path/to/video.mp4 imgsz=640
 ```
+
+---
+
+## **TRAINING RESULTS**
+
+| Metric             | YOLOv5 | YOLOv8 |
+|--------------------|--------|--------|
+| **Precision (P)**  | 0.91   | 0.97   |
+| **Recall (R)**     | 0.962  | 0.872  |
+| **Accuracy (A)**   | 0.969  | 0.948  |
+
+---
+
+## **TESTING RESULTS 1**
+
+| Metric             | YOLOv5 | YOLOv8 |
+|--------------------|--------|--------|
+| **Precision (P)**  | 0.92   | 0.967  |
+| **Recall (R)**     | 0.902  | 0.907  |
+| **Accuracy (A)**   | 0.92   | 0.975  |
+
+---
+
+## **TESTING RESULTS 2**
+
+| Metric             | YOLOv5 | YOLOv8 |
+|--------------------|--------|--------|
+| **Precision (P)**  | 0.93   | 0.973  |
+| **Recall (R)**     | 0.914  | 0.913  |
+| **Accuracy (A)**   | 0.951  | 0.981  |
+
+---
+
+## **DISTANCE EVALUATION**  
+- Both models successfully detected traffic lights at a distance greater than the **Stopping Sight Distance (SSD)** for speeds up to **35 km/h**.  
+- At higher speeds, the models were unable to detect traffic lights before reaching the SSD.  
+- Refer to `distance.ipynb` to calculate distance for the videos.
 
 ---
 
