@@ -49,7 +49,7 @@ Two models have been used for this task: **YOLOv5** and **YOLOv8**.
 
 ---
 
-## **VALIDATION RESULTS**
+## **TESTING RESULTS 1**
 
 | Metric             | YOLOv5 | YOLOv8 |
 |--------------------|--------|--------|
@@ -59,7 +59,7 @@ Two models have been used for this task: **YOLOv5** and **YOLOv8**.
 
 ---
 
-## **TESTING RESULTS**
+## **TESTING RESULTS 2**
 
 | Metric             | YOLOv5 | YOLOv8 |
 |--------------------|--------|--------|
